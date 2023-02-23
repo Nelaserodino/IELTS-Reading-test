@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Prepárate en IELTS for OZ y consigue tu Work and Holiday Visa para viajar a Australia!">
+    <meta name="keywords" content="AUSTRALIA, IELTS, WORK AND HOLIDAY, WORKING HOLIDAY, CURSOS DE INGLES, VISA 462,ESPAÑA">
+    <title>IELTS for AUSTRALIA</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css>
+    <script src="https://kit.fontawesome.com/76b2ab3789.js" crossorigin="anonymous"></script>
+ <!-- Firebase -->
+ <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+        
+ <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+ <script>
+// Your web app's Firebase configuration
+ const firebaseConfig = {
+     apiKey: "AIzaSyA4Y6Ced1cEu4jhoGHFjishO_H7YXuV46w",
+     authDomain: "signup-form-fb7c0.firebaseapp.com",
+     projectId: "signup-form-fb7c0",
+     storageBucket: "signup-form-fb7c0.appspot.com",
+     messagingSenderId: "689546102349",
+     appId: "1:689546102349:web:25fbaa2fd1c44464fbbe04"
+ };
+   
+// Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+ const auth = firebase.auth();
+ const fs = firebase.firestore();
+
+</script>
+</head>
+<header id="header">
+    <h1 class="header__logo">IELTS for OZ</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+            
+    <nav class="header__menu">
+        <a href="./calculadora.html" class="header__link">CALCULATOR</a>
+        <a href="./tests.html" class="header__link">TESTS</a>
+        <a href="./progress.html" class="header__link" >MY PROGRESS</a>
+        <a href="#" class="header__link dictionary-btn" >DICTIONARY</a>
+        <a href="./" class="header__link" id="logOut">Log Out</a>
+        <label for="check" class="esconder-menu">&#215</label>
+    </nav>
+</header>
+<main>
+    <div class="dictionary inactive">
+        <div class="card dictionary-container">
+            <header>English Dictionary <i class="fas fa-search"></i> </header>
+            <div class="search">
+                <input type="text"id="input-word" placeholder=" search a word">
+                
+            </div>
+            <p class="dictionary-text">Type any existing word and press Enter to get the meaning.</p>
+            <div class="definition-container">
+            </div>
+        </div>
+    </div>
+<section class="test-page">
+    <div class="desplegable">
+        <div class="dropdown"><a name="reading"></a>
+            Reading
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Section 2
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./tests.html">Section 1</a></li>
+                <li><a class="dropdown-item" href="./reading-section3.html">Section 3</a></li>
+            </ul>
+        </div>
+      
+        <div class="test-page-article">
+            <header class="test-page-article__header">
+                <div class="stats">
+                <b>Reading Test 1 </b>
+                </div>
+            </header>
+                <div class="test-page-article__content">
+                    <div class="info-text">
+                        <p><i class="fa-solid fa-clock"></i> You are advised to spend 20 minutes on 
+                        <span>Questions 15 - 27.</span> <br> 
+                        <br>
+                        <div class="instructions">
+                            <b>Questions 15 - 20.</b><br>
+                            The following reading passage has six sections <br> 
+                            <em>Choose the correct heading for sections A-F from the list of headings. Choose the correct number, i-viii. There are more headings than sections, so you will not use them all.</em> 
+                        </div>
+                        </p>      
+                    </div>
+                <form class="section2"> 
+                    <div class="letraDescripcion text-description info-text">
+                            <p> 
+                                <span>15</span> Section A  
+                                <select class="answerSection2">
+                                    <option value="I">I</option>
+                                    <option value="II">II</option>
+                                    <option value="III">III</option>
+                                    <option value="IV">IV</option>
+                                    <option value="V">V</option>
+                                    <option value="VI">VI</option>
+                                    <option value="VII">VII</option>
+                                    <option value="VIII">VIII</option>
+                                </select> 
+                            </p> <br>
+                            <p>
+                                <span>16</span> Section B  
+                                <select class="answerSection2">
+                                    <option value="I">I</option>
+                                    <option value="II">II</option>
+                                    <option value="III">III</option>
+                                    <option value="IV">IV</option>
+                                    <option value="V">V</option>
+                                    <option value="VI">VI</option>
+                                    <option value="VII">VII</option>
+                                    <option value="VIII">VIII</option>
+                                </select> 
+                            </p><br>
+                            <p>
+                                <span>17</span> Section C  
+                                <select class="answerSection2">
+                                    <option value="I">I</option>
+                                    <option value="II">II</option>
+                                    <option value="III">III</option>
+                                    <option value="IV">IV</option>
+                                    <option value="V">V</option>
+                                    <option value="VI">VI</option>
+                                    <option value="VII">VII</option>
+                                    <option value="VIII">VIII</option>
+                                </select> 
+                            </p><br>
+                            <p>
+                                <span>18</span> Section D  
+                                <select class="answerSection2">
+                                    <option value="I">I</option>
+                                    <option value="II">II</option>
+                                    <option value="III">III</option>
+                                    <option value="IV">IV</option>
+                                    <option value="V">V</option>
+                                    <option value="VI">VI</option>
+                                    <option value="VII">VII</option>
+                                    <option value="VIII">VIII</option>
+                                </select> 
+                            </p><br>
+                            <p>
+                                <span>19</span> Section E  
+                                <select class="answerSection2">
+                                    <option value="I">I</option>
+                                    <option value="II">II</option>
+                                    <option value="III">III</option>
+                                    <option value="IV">IV</option>
+                                    <option value="V">V</option>
+                                    <option value="VI">VI</option>
+                                    <option value="VII">VII</option>
+                                    <option value="VIII">VIII</option>
+                                </select> 
+                            </p><br>
+                            <p>
+                                <span>20</span> Section F  
+                                <select class="answerSection2">
+                                    <option value="I">I</option>
+                                    <option value="II">II</option>
+                                    <option value="III">III</option>
+                                    <option value="IV">IV</option>
+                                    <option value="V">V</option>
+                                    <option value="VI">VI</option>
+                                    <option value="VII">VII</option>
+                                    <option value="VIII">VIII</option>
+                                </select> 
+                            </p><br>
+                    </div>
+                    <div class="card shadow card-options letraDescripcion text-description info-text">
+                        <div>
+                           <b>List of headings</b> 
+                        </div>
+                        <p> 
+                            <span>I</span> Feeling Confident <br>
+                            <span>II</span> Solving Problems<br>
+                            <span>III</span> Room Arrangement<br> 
+                            <span>IV</span> Equipment<br>
+                            <span>V</span> Defininf Your Purpose<br> 
+                            <span>VI</span> Using Visuals<br> 
+                            <span>VII</span> Your Audience<br> 
+                            <span>VIII</span> Speaking well<br> 
+                        </p>
+                    </div>
+                
+                
+
+                <div class="card shadow text-description info-text">
+                    <h2>How to Give an Effective Presentation</h2>  
+                    
+                    <p class="letraDescripcion">When planning an effective presentation, there are a number of things to keep in mind. <br>
+                    <b>A</b> <br>
+                    First ask yourself, “Why am I giving this presentation?” The point of your presentation may be to outline a project plan, report on work that has been done, solve a problem, provide training, or generate support for an idea. Once you are clear on the reason for your presentation, it will be easier to organize1 your information.
+                    <br>
+                    <b>B</b> <br>
+                    If you are not used to giving presentations, you may feel nervous. There are a few things you can do to counteract this. The most important thing is to rehearse your presentation several times until you feel comfortable with it. Before you begin speaking, take a few deep breaths. This will help you relax. Stand up straight and look your audience in the eye. Most of all, don’t try to be perfect. This is an impossible goal. <br>
+                    <b>C</b> <br>
+                    Even though you may be using a microphone, you still need to pay attention to your voice. Talk slowly and clearly. Pause often to give your audience time to absorb the information. Do not garble your words or talk so quickly that no one can follow you.<br>
+                    <b>D</b> <br>
+                    There is no better way to lose your audience than to stand at the front of the room and talk on and on but give them nothing to look at. Plan to use presen­ tation software to show charts and graphs, photographs, maps, or other graphics that will make your ideas clearer. This is particularly important for numbers, but it is also useful for other kinds of information. <br>
+                    <b>E</b> <br>
+                    Before you begin your presentation, remember to check the microphone, com­ puter, and any other special tools you may be using. Make sure everything is in working order before you start talking so that there will be no interruptions due to breakdowns. <br>
+                    <b>F</b> <br>
+                    Something that is often overlooked but that is very important for an effective presentation is the location setup. Make sure that the seating is placed so that it allows everyone to see your slides and hear your voice. The chairs should be com­ fortable, too. <br>
+                </p>
+                </div>
+                <div class="letraDescripcion text-description info-text instructions">
+                    <p><span>Questions 21 - 27</span>
+                    <br>
+                    Read the text below and answer Questions 21—27.</p> 
+                </div>
+                <div class="card shadow text-description">
+                    <h2>The Marcy Corporation Information for New Employees</h2>  
+                    
+                    <p class="letraDescripcion">All new employees at the Marcy Corporation are required to attend an orienta­ tion session during their first month of employment. The next orientation ses­ sion will be held on March 21 in the company conference room. Employee benefits, payment policies, employee responsibilities, and other personnel mat­ ters will be discussed. Employees are requested to read the employee manual and submit the signed statement prior to attending the orientation. <br>
+                    The Marcy Corporation Employee Manual has been provided to inform our employees about the company’s procedures and policies. W e ask each employee to take the time to read the manual carefully. After a thorough review of the manual, the statement below should be signed and returned to the employee’s supervisor by the date noted below. Every effort has been made to present the information in the manual in a clear and concise manner. If there are any ques­ tions regarding the content of the manual, they should be submitted in writing to Human Resources. <br> <hr>
+                    <b>Statement</b><br>
+                    I,________________ , have read a copy of the Marcy Corporation Employee Manual and am familiar with its contents. By signing below, I certify that I understand and accept the information contained in the Marcy Corporation Employee Manual and agree to abide by the Marcy Corporation’s policies. <br><br>
+                    ______________________  (Employee signature) <br>
+                    Please submit by: March 15
+                </p>
+                </div>
+                <div class="letraDescripcion text-description info-text instructions">
+                    <p><span>Questions21-27</span>
+                    <br>Complete the sentences below. <br>
+                    <em>Choose NO MORE THAN THREE WORDS from the text for each answer.</em></p> 
+                </div>
+                <div class="text-description info-text"> 
+                    
+                    <div class="fillInTheGaps">
+                        <div class="mb-1">
+                            <span>21</span> All <input type="text" class="answerSection2"> must participate in an orientation session.
+                        </div>
+                        <div class="mb-1">
+                            <span>22</span> The <input type="text" class="answerSection2"> will take place in the company conference room.
+                        </div>
+                        <div class="mb-1">
+                            <span>23</span> The manual should be read before <input type="text" class="answerSection2"> 
+                        </div>
+                        <div class="mb-1">
+                            <span>24</span> The employee manual contains information about the company’s <input type="text" class="answerSection2"> 
+                        </div>
+                        <div class="mb-3">
+                            <span>25</span> The signed statement should be submitted to <input type="text" class="answerSection2">
+                        </div>
+                        <div class="mb-1">
+                            <span>26</span> <input type="text" class="answerSection2"> will answer questions about the content of the manual.
+                        </div>
+                        <div class="mb-1">
+                            <span>27</span> The due date for the signed statement is <input type="text" class="answerSection2"> 
+                        </div>
+                    </div>
+                    <div class="test-page-footer">
+                        <a href="./reading-section3.html" class="go-to-next-section" id="goSection3">Go to section 3<i class="fa-solid fa-arrow-right-long"></i></a>
+                        <button type="submit" class="submit-btn" id="btnCheck">Check Answers</button>
+                    </div>
+                </form>
+        </section>
+        
+
+    </div>
+
+</section>
+</main>    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../javascript/functions.js"></script>
+<script src="../javascript/reading-section2.js"></script>
+</body>
+
+
+</html>

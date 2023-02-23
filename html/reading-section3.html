@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Prepárate en IELTS for OZ y consigue tu Work and Holiday Visa para viajar a Australia!">
+    <meta name="keywords" content="AUSTRALIA, IELTS, WORK AND HOLIDAY, WORKING HOLIDAY, CURSOS DE INGLES, VISA 462,ESPAÑA">
+    <title>IELTS for AUSTRALIA</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css>
+    <script src="https://kit.fontawesome.com/76b2ab3789.js" crossorigin="anonymous"></script>
+ <!-- Firebase -->
+ <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+        
+ <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+ <script>
+// Your web app's Firebase configuration
+ const firebaseConfig = {
+     apiKey: "AIzaSyA4Y6Ced1cEu4jhoGHFjishO_H7YXuV46w",
+     authDomain: "signup-form-fb7c0.firebaseapp.com",
+     projectId: "signup-form-fb7c0",
+     storageBucket: "signup-form-fb7c0.appspot.com",
+     messagingSenderId: "689546102349",
+     appId: "1:689546102349:web:25fbaa2fd1c44464fbbe04"
+ };
+   
+// Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+ const auth = firebase.auth();
+ const fs = firebase.firestore();
+
+</script>
+</head>
+<header id="header">
+    <h1 class="header__logo">IELTS for OZ</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+            
+    <nav class="header__menu">
+        <a href="./calculadora.html" class="header__link">CALCULATOR</a>
+        <a href="./tests.html" class="header__link">TESTS</a>
+        <a href="./progress.html" class="header__link" >MY PROGRESS</a>
+        <a href="#" class="header__link dictionary-btn" >DICTIONARY</a>
+        <a href="./" class="header__link" id="logOut">Log Out</a>
+        <label for="check" class="esconder-menu">&#215</label>
+    </nav>
+</header>
+<main>
+    <div class="dictionary inactive">
+        <div class="card dictionary-container">
+            <header>English Dictionary <i class="fas fa-search"></i> </header>
+            <div class="search">
+                <input type="text"id="input-word" placeholder=" search a word">
+                
+            </div>
+            <p class="dictionary-text">Type any existing word and press Enter to get the meaning.</p>
+            <div class="definition-container">
+            </div>
+        </div>
+    </div>
+<section class="test-page">
+    <div class="desplegable">
+        <div class="dropdown"><a name="reading"></a>
+            Reading
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Section 3
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./tests.html">Section 1</a></li>
+                <li><a class="dropdown-item" href="./reading-section2.html">Section 2</a></li>
+            </ul>
+        </div>
+      
+        <div class="test-page-article">
+            <header class="test-page-article__header">
+                <div class="stats">
+                <b>Reading Test 1 </b>
+                </div>
+            </header>
+            <div class="test-page-article__content">
+                <div class="info-text">
+                    <p><i class="fa-solid fa-clock"></i> You are advised to spend 20 minutes on 
+                    <span>Questions 28 - 40.</span> which are based on the reading passage below.<br> 
+                    <br>
+                    </p> 
+                    <div class="card shadow text-description info-text">
+                        <h2>Canoes Around the World</h2>  
+                            
+                        <p class="letraDescripcion">
+                            Many cultures throughout the world have developed some form of canoe—a long, slender, open boat powered by handheld paddles. In each case, the tech­ nologies and materials used to construct the canoe reflect the resources available to that particular culture. There are three basic types of canoe: the frame-and- bark canoe, the dugout, and the plank canoe. Developed by cultures on every continent since prehistoric times, canoes continue to be used today both for sur­ vival and for recreation. <br><br>
+                            
+                            The birch-bark canoe, an example of the frame-and-bark type of construction, was developed in the region that is now the northeastern United States and east­ ern Canada. Native Americans constructed birch-bark canoes by building a frame from spruce wood and then using roots to stitch pieces of birch bark over the frame. In areas where birch was not available, bark from elm or spruce trees was used instead. After the bark was sewn to the frame, the canoes were then sealed with a mixture of spruce gum and bear grease. These substances worked very well to make the boat watertight. Birch-bark canoes were lightweight and thus easily portaged around waterfalls or from lake to lake. Most were designed to hold no more than two or three people and were used for lake and river travel. When Europeans opened up the fur trade in North America in the seventeenth century, the French traders used larger versions (30 to 40 feet in length) to trans­ port furs in large quantities across the Great Lakes for shipment back to Europe.
+                            <br>
+                            <br>
+                            
+                            The dugout—a canoe created from a single tree trunk—has been used in many areas throughout the world. Simple versions of hollowed-out logs were used by native peoples throughout much of North America. Coastal groups such as the Haida and Tlinglit in the Pacific Northwest developed large dugout crafts 60 feet or longer that could carry large numbers of people on the ocean for trade, warfare, fishing, whaling, and travel to ceremonial gatherings. First, the outer and inner bark around the entire circumference of a tall, straight tree, often a cedar or redwood, was removed. This process, called girdling, cuts off the flow of sap, thus killing the tree and making it easier to chop down. Then the tree was felled and cut to the appropriate length. The opening of the dugout was created by repeatedly burning the wood, then carving it out with tools. In early times, stone tools were used, but later metal tools came into use. Once the canoe was carved out, the boat builders filled it with water and brought the water to a boil using stones heated on a fire. This softened the wood and the weight of the water caused the walls of the canoe to bow outward, giving it more width than the orig­ inal girth of the tree.<br>
+                            <br>
+                            The ocean-going Chumash people of what is now southern California devel­ oped the tomoL, or plank canoe. They created their canoes by cutting planks from redwood trees, carving and shaping them into a canoe without any frame. They lashed the planks together by drilling holes and tying them with cords. Pitch from pine trees and tar, also found locally, were used between the planks and over the entire hull for waterproofing.<br>
+                            <br>
+                            The canoe played a major role in the spread of all the Pacific Island cultures. These cultures developed outrigger and double-hulled dugout canoes. Outriggers have one or more parallel floats attached to a dugout canoe with poles for increased stability in ocean waves. Double-hulled canoes have a platform between two parallel dugouts. These highly stable designs, combined with sails, enabled the Polynesians to go on epic ocean journeys and to inhabit far-flung islands. Several families (or as many as 200 people in the largest vessels), could sail in each of these double-hulled canoes with food, water, and domesticated plants and animals across huge expanses of ocean, and in this way the Polynesian people spread throughout the Pacific, establishing new communities on previ­ ously uninhabited islands. <br>
+                            <br>
+                            In areas of dense rain forest throughout the world, including the Amazon basin, and parts of Africa and Asia, river travel with dugouts was, and in many cases still is, the primary means of transportation. In West Africa, large war canoes capable of transporting many fighters were carved from single trees. <br>
+                            <br>
+                            Descendants of the ancient canoes are still widely used today. Traditional cultures around the world still use dugout canoes for fishing and transportation. Today’s modern recreational canoes, while now often constructed with alu­ minum,1fiberglass,2wood, and canvas, plastic, and other synthetic materials, still retain the shape and basic design of the birch-bark canoes developed in the distant past. The catamaran sailboat, widely used in racing, is a direct descen­ dant of the double-hulled sailing canoe used thousands of years ago by the Polynesian cultures. <br>
+                        </p>
+                </div>
+                <div class="letraDescripcion text-description info-text instructions">
+                    <p><span>Questions 28-34</span>
+                    <br><em>Look at the following descriptions, Questions 28—34, of the different types of canoes. Match each description with the correct canoe, A, B, or C. </em></p> 
+                </div>
+                <div class="letraDescripcion text-description info-text">
+                    <form class="section3">
+                            <p> <span>28</span>  held together with rope 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p> <br>
+                            <p><span>29</span>  made from a hollowed-out log
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p><br>
+                            <p><span>30</span>  made waterproof with gum and grease
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p>   <br>
+                            <p> <span>31</span>  constructed with the use of both fire and water
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p> <br>
+                            <p><span>32</span>  easy to carry over land
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p>   <br>
+                            <p><span>33</span>  sealed with pitch and tar 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p>   <br>
+                            <p><span>34</span>  made to carry just a few people 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </p><br>
+                    
+                    
+                            <div class="card shadow card-options letraDescripcion text-description info-text">
+                                <p> <b>TYPES OF CANOES</b> <br>
+                                    <span>A</span> birch-bark<br>
+                                    <span>B</span> dugout<br>
+                                    <span>C</span> plank<br>
+                                </p>
+                            </div>
+                            <div class="letraDescripcion text-description info-text instructions">
+                                <p><span>Questions 35-40</span><br>
+                                    Complete the summary below. <br> 
+                                    <em>Choose <b>NO MORE THAN TWO WORDS</b>  from the text for each answer.</em></p> 
+                            </div>
+                            <div>
+                                <p>
+                                    Polynesians turned dugout canoes into outrigger canoes by attaching
+                                    <div class="section-inputs"><input type="text"> </div>to them. Double-hulled canoes were made by connecting two outrigger canoes with <div class="section-inputs"><input type="text"> </div>. Because they could travel over <div class="section-inputs"><input type="text"> </div> of ocean in these canoes, Polynesians were able to inhabit islands all across the Pacific Ocean. In West Africa, large war canoes were used to carry <div class="section-inputs"><input type="text"> </div>. Today, <div class="section-inputs"><input type="text"> </div> canoes are made of modern materials such as aluminum, fiberglass, and plastic. These modern canoes are similar in form to <div class="section-inputs"><input type="text"> </div> canoes.
+                                </p>
+                            </div>
+                    
+                </div>   
+        </div>
+    </div>
+        
+    <div class="test-page-footer">
+        <button type="submit" class="submit-btn" id="btnCheck">Check Answers</button> 
+    </div>  
+    <div class="btn-check-score">
+        <button type="button" class="submit-btn" id="btn-check-score">Check Final Score</button> 
+    </div> 
+</section>
+
+</main>    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../javascript/functions.js"></script>
+<script src="../javascript/reading-section3.js"></script>
+
+</body>
+
+
+</html>

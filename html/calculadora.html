@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Prepárate en IELTS for OZ y consigue tu Work and Holiday Visa para viajar a Australia!">
+    <meta name="keywords" content="AUSTRALIA, IELTS, WORK AND HOLIDAY, WORKING HOLIDAY, CURSOS DE INGLES, VISA 462,ESPAÑA">
+    <title>IELTS for AUSTRALIA</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css>
+    <script src="https://kit.fontawesome.com/76b2ab3789.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<header id="header">
+    <h1 class="header__logo">IELTS for OZ</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+            
+    <nav class="header__menu">
+        <a href="./calculadora.html" class="header__link">CALCULATOR</a>
+        <a href="./tests.html" class="header__link">TESTS</a>
+        <a href="" class="header__link" >MY PROGRESS</a>
+        <!-- <a href="./vistas/login.html" class="header__link" >Usuarios <i class="fa-solid fa-circle-user"></i></a> -->
+        <label for="check" class="esconder-menu">&#215</label>
+    </nav>
+</header>
+<body>
+    <main class="calculator-page">
+        <h1 class="mainTitle">Welcome to the IELTS calculator!</h1>
+        <div class="container-cards">
+            <div class="calculator card">
+                <h2 class="letraSubtitulo calculator-title">Band Score Calculator</h2>
+                <div class="calculator-container">
+                    <div class="letraDescripcion calculator-container-description">
+                        <p>This calculator converts correct answers (out of 40) into an approximate band score (out of 9). <br>
+                        It helps you to know what your band score would be according to a sample test.
+                        </p>
+                    </div>
+                    <div class="letraDescripcion calculator-container-section">
+                        <form id="formulario-points" class="calculator-container-skills">
+                            <p>Reading correct answers (out of 40)</p>
+                            <input id="input-readingPoints" class="input" type="text" >
+                            <p>Listening correct answers (out of 40)</p>
+                            <input id="input-listeningPoints" class="input" type="text" >
+                            <button id="btn-score" class="submit-btn" type = "button" >CALCULATE</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="scores">
+                </div>
+            </div>
+            
+            <div class="calculator card">
+                <h2 class="letraSubtitulo calculator-title">Raw Score Calculator</h2>
+                <div class="calculator-container">
+                    <div class="letraDescripcion calculator-container-description">
+                        <p>This calculator converts band score (out of 9) into approximate raw score (out of 40). <br>
+                        It helps you to know how many correct answers you need to hit a particular band score.</p>
+                    </div>
+                    <div class="letraDescripcion calculator-container-section">
+                        <form class="calculator-container-skills" id="formulario-score">
+                            <p>Reading Band Score you aim (out of 9)</p>
+                            <input id="input-readingScore" class="input" type="text" >
+                            <p>Listening Band Score you aim (out of 9)</p>
+                            <input id="input-listeningScore" class="input" type="text" >
+                            <button id="btn-points" class="submit-btn" type = "button" >CALCULATE</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="points">
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="../javascript/calculadora.js"></script>   
+</body>
+
+
+
+</html>

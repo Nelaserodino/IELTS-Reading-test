@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Prepárate en IELTS for OZ y consigue tu Work and Holiday Visa para viajar a Australia!">
+    <meta name="keywords" content="AUSTRALIA, IELTS, WORK AND HOLIDAY, WORKING HOLIDAY, CURSOS DE INGLES, VISA 462,ESPAÑA">
+    <title>IELTS for AUSTRALIA</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css>
+    <script src="https://kit.fontawesome.com/76b2ab3789.js" crossorigin="anonymous"></script>
+<!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+        
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+    <script>
+// Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyA4Y6Ced1cEu4jhoGHFjishO_H7YXuV46w",
+        authDomain: "signup-form-fb7c0.firebaseapp.com",
+        projectId: "signup-form-fb7c0",
+        storageBucket: "signup-form-fb7c0.appspot.com",
+        messagingSenderId: "689546102349",
+        appId: "1:689546102349:web:25fbaa2fd1c44464fbbe04"
+    };
+      
+// Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const fs = firebase.firestore();
+
+</script>
+ 
+</head>
+<header id="header">
+    <h1 class="header__logo">IELTS for OZ</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+            
+    <nav class="header__menu">
+        <a href="./calculadora.html" class="header__link calculator-btn">CALCULATOR</a>
+        <a href="./tests.html" class="header__link">TESTS</a>
+        <a href="./progress.html" class="header__link" >MY PROGRESS</a>
+        <a href="#" class="header__link dictionary-btn" >DICTIONARY</a>
+        <a href="./" class="header__link" id="logOut">Log Out</a>
+        <label for="check" class="esconder-menu">&#215</label>
+    </nav>
+</header>
+<main>
+        <div class="dictionary inactive">
+            <div class="card dictionary-container">
+                <header>English Dictionary <i class="fas fa-search"></i> </header>
+                <div class="search">
+                    <input type="text"id="input-word" placeholder=" search a word">
+                    
+                </div>
+                <p class="dictionary-text">Type any existing word and press Enter to get the meaning.</p>
+                <div class="definition-container">
+                </div>
+            </div>
+        </div>
+        <div class="header-container">
+            <div class="tests-header">
+                <div class="title">
+                    <img class="ielts-logo" src="../img/IELTS-logo-1024x614.png" alt="logo-ielts">
+                    <h1 id="welcomeUser"></h1>
+                </div> 
+            </div>
+        </div>
+    <section class="test-page">
+        <div class="desplegable">
+            <div class="dropdown"><a name="reading"></a>
+                Reading
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                     Section 1
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="./reading-section2.html">Section 2</a></li>
+                    <li><a class="dropdown-item" href="./reading-section3.html">Section 3</a></li>
+                </ul>
+            </div>
+        <div class="test-page-article">
+            <header class="test-page-article__header letraSubtitulo">
+                <div class="stats">
+                    <b>Reading Test 1 </b>
+                </div>
+            </header>
+            <div class="test-page-article__content">
+                <div class="info-text letraDescripcion">
+                    <p><i class="fa-solid fa-clock"></i> You are advised to spend 20 minutes on 
+                        <span>Questions 1 - 14.</span> <br> Read the text below and choose the correct answer for questions 1 — 7.</p>      
+                </div>
+                <div class="card shadow text-description">
+                    <h2>Barchester Office Towers Visitor Information</h2>  
+                    
+                    <p class="letraDescripcion">Welcome to Barchester Office Towers. Visitors must register with the Security Desk in order to obtain a visitor’s badge and be allowed entrance to the building. The Security Desk is located on the ground1floor lobby near the main entrance. The security offi­ cer on duty will direct you to the office you are visiting. In addition, a map of the building is displayed near the main elevators, 2 located behind the Security Desk. <br>
+                    To reach the rooftop parking area, take the elevator to the fourth floor, then follow the signs. Also located on that floor is the City View Restaurant, serving three meals a day, Tuesday-Sunday. <br>
+                    Barchester Office Towers offers a number of business services for the convenience of tenants and visitors. The Copy Center3 is located on the second floor. Photocopy and fax services are avail­ able here. Computers with Internet access are also available. The Copy Center is open twenty-four hours a day. You must show your visitor’s badge when requesting services. <br>
+                    A small branch post office is located down the hall from the Copy Center. Envelopes and stamps are sold here. Mail pickup is twice a day, at 7:30 a.m. and 5:00 p.m. On the third floor, you will find a branch of the National Bank. All basic banking services are offered. Next to the bank is the Barchester Coffee Shop. Coffee, tea, and snacks are sold here, and most major daily newspapers and busi­ ness magazines are available for perusal. The coffee shop is open from 7:00 a .m . until 4:30 p .m . Monday-Saturday.</p>
+                </div>
+                <div class="letraDescripcion text-description info-text instructions">
+                    <p><span>Questions 1-7</span>
+                    <br><em>On which floor of the office complex can you do each of the following activities?</em></p> 
+                </div>
+                <div class="card shadow card-options letraDescripcion text-description info-text">
+                    <p> 
+                        <span>A</span> if you can do this on the ground floor<br>
+                        <span>B</span> if you can do this on the second floor<br>
+                        <span>C</span> if you can do this on the third floor<br>
+                        <span>D</span> if you can do this on the fourth floor<br>
+                    </p>
+                </div>
+                <div class="letraDescripcion text-description info-text">
+                    <form class="section1">
+                        <p> <span>1</span>  have lunch 
+                            <select class="answerSection1">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                </select>
+                        </p> <br>
+                        <p><span>2</span>  cash a check 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                        </p><br>
+                        <p><span>3</span>  mail a letter
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                        </p>   <br>
+                        <p> <span>4</span>  get a pass to enter the building 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                        </p> <br>
+                        <p><span>5</span>  read a newspaper 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                        </p>  <br> 
+                        <p><span>6</span>  fax a document 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                            </select>
+                        </p>  <br> 
+                        <p> <span>7</span>  look at a map of the building 
+                                <select class="answerSection1">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                        </p> 
+
+
+                        <div class="letraDescripcion text-description info-text instructions">
+                            <p><span>Questions 8-14</span><br>Read the text below and answer Questions 8 — 14. </p>  
+                        </div>
+                        <div class="card shadow text-description my-3">
+                                <h2>Spring Willow Farm Museum and Education Center</h2>  
+                                <p class="letraDescripcion">Spring Willow Farm is a fully operating farm designed to educate the public about farm operation, farming history, and issues facing farmers today. <br>
+                                <span>Schedule</span> <br>
+                                We are open to the public year-round, with reduced hours during the winter months. Closed Mondays and holidays. <br>
+                                <span>Visiting the Farm</span> <br>
+                                Visitors are free to tour the farm on their own. Please note that chil­ dren must be accompanied by an adult at all times. Maps are avail­ able at the information desk in the Main Building. Guided tours are included in the cost of admission. Tours leave from the Main Building front entrance at 10:00 a .m . and 2:00 p .m . daily. <br> 
+                                <span>Classes</span>  <br>
+                                The museum offers classes on various aspects of farming and farm history two evenings a week throughout the year. Ask at the informa­ tion desk for a schedule of upcoming classes. In addition, classes on special subjects related to farming can be arranged for your club or group. Please contact the Education Office for further information. All classes take place in the classrooms located on the second floor of the Main Building. <br>
+                                </p>
+                        </div>
+                        <div>
+                            <p class="instructions">
+                                <em> Do the following statements agree with the information given in the text about the Spring Willow Farm Museum and Education Center?</em> <br>
+                                <b>For questions 8-14, choose the best option:</b> </p>
+                        </div>
+                        <div class="card shadow card-options letraDescripcion text-description info-text">
+                            <p> 
+                                <span>TRUE</span>  if the statement agrees with the information <br>
+                                <span>FALSE</span>  if the statement contradicts the information <br>
+                                <span>NOT GIVEN</span>  if there is no information on this  <br>
+                            </p>
+                        </div>
+                            <p class="mt-4"> <span>8</span>  Spring Willow Farm is closed during the winter months. 
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+
+                            <p> <span>9</span>  Children are not allowed to visit the farm. 
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+
+                            <p> <span>10</span>  Spring Willow Farm charges visitors an admission fee.
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+
+                            <p> <span>11</span>  The guided tours last two hours.
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+
+                            <p> <span>12</span> The museum has gifts for sale.
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+
+                            <p> <span>13</span>  Farmers are offered a special discount on classes.
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+
+                            <p> <span>14</span>  The museum buildings are open in the evening.
+                                <select class="answerSection1">
+                                    <option value="TRUE">TRUE</option>
+                                    <option value="FALSE">FALSE</option>
+                                    <option value="NOT-GIVEN">NOT GIVEN</option>
+                                </select>
+                            </p> <br>
+                            
+                            <div class="test-page-footer">
+                                <a href="./reading-section2.html" id="goSection2" class="go-to-next-section">Go to section 2<i class="fa-solid fa-arrow-right-long"></i></a>
+                                <button type="submit" class="submit-btn" id="btnCheck">Check Answers</button>
+                            </div>
+                        </form>
+                    </div>
+               
+                  
+
+                    
+            
+            
+         
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../javascript/functions.js"></script>
+<script src="../javascript/tests.js"></script>
+</body>
+
+
+</html>
